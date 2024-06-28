@@ -1,0 +1,50 @@
+#com_logo{
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    left: 3%;
+    top: 5%;
+    cursor: pointer;
+}
+
+#com_logo:hover{
+    transform: scale(1.06);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.bg1{
+    height: 310%;
+    width: 18.5%;
+    position: absolute;
+    left: 58%;
+    top: -24rem;
+    border-radius: 2rem;
+    transform: rotate(18deg);
+    opacity: 0.95;
+    display: inline-block;
+}
+
+.bg1:hover{
+    transform: rotate(18deg) scale(1.04);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+
+.bg2{
+    height: 90%;
+    width: 18.5%;
+    position: relative;
+    left: 68%;
+    top: 12%;
+    border-radius: 2rem;
+    transform: rotate(18deg);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.bg2:hover{
+    transform: rotate(18deg) scale(1.04);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}

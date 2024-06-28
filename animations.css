@@ -1,0 +1,21 @@
+@keyframes logosize {
+    from{
+        /* width: 7rem;
+        height: 2.45rem; */
+        transform: scale(1);
+    }
+    to{
+        /* width: 8rem;
+        height: 2.65rem; */
+        transform: scale(1.15);
+    }
+}
+
+@keyframes img_size {
+    from{
+        transform: rotate(18deg) scale(1);
+    }
+    to{
+        transform: rotate(18deg) scale(1.05);
+    }
+}
