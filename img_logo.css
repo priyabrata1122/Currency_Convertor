@@ -9,7 +9,7 @@
 
 #com_logo:hover{
     transform: scale(1.06);
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
@@ -27,7 +27,7 @@
 
 .bg1:hover{
     transform: rotate(18deg) scale(1.04);
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
@@ -45,6 +45,6 @@
 
 .bg2:hover{
     transform: rotate(18deg) scale(1.04);
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }

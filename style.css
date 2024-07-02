@@ -35,3 +35,42 @@ body{
     z-index: 2;
     top: 3.5rem;
 }
+
+#nav{
+    display: inline-block;
+    position: absolute;
+    min-width: 20%;
+    height: 2rem;
+    left: 25%;
+    top: 7%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 550;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* color: rgb(255, 130, 0); */
+    color: rgba(1,81,148,255);
+}
+
+#nav a:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+#description_body{
+    border: 1px solid black;
+    width: 25%;
+    height: 10rem;
+    display: inline-block;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+}
