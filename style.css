@@ -64,13 +64,3 @@ body{
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
 }
-
-#description_body{
-    border: 1px solid black;
-    width: 25%;
-    height: 10rem;
-    display: inline-block;
-    position: absolute;
-    left: 12%;
-    top: 30%;
-}
