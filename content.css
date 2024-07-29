@@ -61,3 +61,18 @@
     border: 5px solid black;
     border-radius: 8px;
 }
+
+.bottom_container p{
+    position: absolute;
+    color: white;
+    font-family: Arial;
+    font-weight: 100;
+    left: 73vw;
+    top: 11vh;
+}
+
+.bottom_container p span{
+   font-size: 1.5rem;
+    color: red;
+    size: 2rem;
+}
