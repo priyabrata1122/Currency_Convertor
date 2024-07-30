@@ -3,49 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="img_logo.css">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="mediaQueries.css">
-    <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="ui_2.css">
     <title>NetRate</title>
 </head>
 <body>
 
     <h1>
-        Currency Converter
+        <span>Currency</span> Converter
     </h1>
 
-    <div class="main_box">
+    <h2>
+        Exchange Rate today
+    </h2>
 
-        <h2>
-            Exchange Rate today
-        </h2>
-
+    <form>
         <div class="input_container">
-
             <div class="amount">
                 <p>Amount</p>
-                <div class="in_"></div>amount
+                <input type="text" value="1">
             </div>
-            
             <div class="from">
                 <p>From</p>
-                <div class="in_from"></div>
+                <div class="select_container">
+                    <select name="From" id="to">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
             </div>
-            
+
             <div class="to">
                 <p>To</p>
-                <div class="in_to"></div>
+                <div class="select_container">
+                    <select name="To" id="to">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
             </div>
+
+            <div class="output_container"></div>
+            <div class="value_container"></div>
             
         </div>
-
-        <div class="output_container"></div>
-
-        <div class="value_container"></div>
-
-    </div>
+    </form>
 </body>
 </html>

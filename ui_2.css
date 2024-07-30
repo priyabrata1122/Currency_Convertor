@@ -1,0 +1,94 @@
+body{
+    background-color: #f0f2f5;
+}
+
+body h1{
+    position: absolute;
+    top: 3vh;
+    left: 10vw;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body h1 span{
+    color: #09b9f5;    
+}
+
+body h2{
+    position: absolute;
+    display: inline-block;
+    left: 17vw;
+    top: 18vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+
+/* .main_box div {
+    display: inline-block;
+} */
+
+/* .main_box{
+    position: absolute;
+    left: 14vw;
+    top: 15vh;
+    border: 1px solid black;
+    width: 70%;
+    height: 70vh;
+}
+
+.input_container{
+    
+}
+
+.input_container div{
+    min-width: 7vw;
+    min-height: 10vh;
+    border: 1px solid black;
+}
+
+.output_container{
+    position: absolute;
+    border: 1px solid black;
+    min-height: 5vh;
+    min-width: 20vw;
+    left: 4vw;
+    top: 40vh;
+}
+
+.value_container{
+    position: absolute;
+    border: 1px solid black; 
+    min-height: 5vh;
+    min-width: 20vw;
+    left: 4vw;
+    top: 50vh;
+} */
+
+form{
+    position: absolute;
+    left: 14vw;
+    top: 15vh;
+    border: 1px solid black;
+    width: 70%;
+    height: 70vh;
+}
+
+.input_container{
+    position: absolute;
+    min-height: 15vh;
+    min-width: 91%;
+    border: 1px solid black;
+    top: 15vh;
+    left: 3vw;
+}
+
+.amount{
+    display: inline-block;
+}
+
+.from{
+    display: inline-block;
+}
+
+.to{
+    display: inline-block;
+}
