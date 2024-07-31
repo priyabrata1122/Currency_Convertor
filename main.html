@@ -11,7 +11,10 @@
 
     <h1>
         <span>Currency</span> Converter
+
     </h1>
+
+    <h3 class="Home">Home</h3>
 
     <h2>
         Exchange Rate today
@@ -21,16 +24,16 @@
         <div class="input_container">
             <div class="amount">
                 <p>Amount</p>
-                <input type="text" value="1">
+                <input type="text" value="1" title="amount"> 
             </div>
             <div class="from">
                 <p>From</p>
                 <div class="select_container">
-                    <select name="From" id="to">
-                        <option value="INR">INR</option>
+                    <select name="From" title="from" id="select1">
+                        <!-- <option value="INR">INR</option>
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
-                        <option value="AUD">AUD</option>
+                        <option value="AUD">AUD</option> -->
                     </select>
                 </div>
             </div>
@@ -38,19 +41,31 @@
             <div class="to">
                 <p>To</p>
                 <div class="select_container">
-                    <select name="To" id="to">
-                        <option value="INR">INR</option>
+                    <select name="To" title="to" id="select2">
+                        <!-- <option value="INR">INR</option>
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
-                        <option value="AUD">AUD</option>
+                        <option value="AUD">AUD</option> -->
                     </select>
                 </div>
-            </div>
 
-            <div class="output_container"></div>
-            <div class="value_container"></div>
-            
+            </div>
         </div>
+
+        <div class="flag_container">
+            <div class="from_flag"><img src="" title="flag1"></div>
+            <div class="to_flag"><img src="" title="flag2"></div>
+        </div>
+
+        <div class="output_container">
+            <p>Converted Amount : </p>
+            <h6></h6>
+        </div>
+
+        <button type="submit">Get Rate</button>
     </form>
+
+    <script src="script_UI.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
