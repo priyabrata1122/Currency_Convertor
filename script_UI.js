@@ -165,13 +165,26 @@ const countryList = {
     ZWD: "ZW",
   };
 
-const url = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies";  
+const url = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies"; 
 
 const dropdown = document.querySelector(".select_container select");
 const button = document.querySelector("form button");
 
 const select1 = document.querySelector("#select1");
 const select2 = document.querySelector("#select2");
+
+const flag1 = document.querySelector("#flag1");
+const flag2 = document.querySelector("#flag2");
+
+// const changeFlag = (changeurl , targetflag)=>{
+//     targetflag.src = changeurl;
+// }
+
+// const updateflag = (element) =>{
+//     let countryCode = countryList[element.value];
+//     let flagurl = `https://flagsapi.com/${countryCode}/flat/64.png`;
+//     changeFlag(flagurl ,  flag1.target);
+// }
 
 for(currCode in countryList){
     let newoption = document.createElement("option");
@@ -194,3 +207,8 @@ for(currCode in countryList){
 
     select2.append(newoption);
 }
+
+// select1.addEventListener("change",function(evt){
+//     updateflag(evt.target);
+// })
+
