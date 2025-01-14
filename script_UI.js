@@ -165,26 +165,10 @@ const countryList = {
     ZWD: "ZW",
   };
 
-const url = "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies"; 
 
-const dropdown = document.querySelector(".select_container select");
-const button = document.querySelector("form button");
-
+// Code for appending the new options in both Select container
 const select1 = document.querySelector("#select1");
 const select2 = document.querySelector("#select2");
-
-const flag1 = document.querySelector("#flag1");
-const flag2 = document.querySelector("#flag2");
-
-// const changeFlag = (changeurl , targetflag)=>{
-//     targetflag.src = changeurl;
-// }
-
-// const updateflag = (element) =>{
-//     let countryCode = countryList[element.value];
-//     let flagurl = `https://flagsapi.com/${countryCode}/flat/64.png`;
-//     changeFlag(flagurl ,  flag1.target);
-// }
 
 for(currCode in countryList){
     let newoption = document.createElement("option");
@@ -204,11 +188,73 @@ for(currCode in countryList){
     if(select2.name === "To" && currCode === "INR"){
         newoption.selected = "selected";
     }
-
+    
     select2.append(newoption);
 }
 
-// select1.addEventListener("change",function(evt){
-//     updateflag(evt.target);
-// })
+const selectElement1 = document.querySelector("#select1");
+const selectElement2 = document.querySelector("#select2");
 
+
+// Code for the change of flag in the dropdown menu 
+const updateFlag1=(selectedValue)=>{
+    const countryCode = countryList[selectedValue];
+    const flagUrl = `https://flagsapi.com/${countryCode}/flat/64.png`;
+
+    let flag1 = document.querySelector("#flag1");
+    flag1.src = flagUrl;
+}
+
+const updateFlag2=(selectedValue)=>{
+    const countryCode = countryList[selectedValue];
+    const flagUrl = `https://flagsapi.com/${countryCode}/flat/64.png`;
+
+    let flag2 = document.querySelector("#flag2");
+    flag2.src = flagUrl;
+}
+
+selectElement1.addEventListener('change',function(){
+    const selectedValue = selectElement1.value;
+    console.log(selectedValue);
+    updateFlag1(selectedValue);
+})
+
+selectElement2.addEventListener('change',function(){
+    const selectedValue = selectElement2.value;
+    console.log(selectedValue);
+    updateFlag2(selectedValue);
+})
+
+// code for getting the currency values and changing the output 
+
+const element1=document.querySelector("#select1");
+const element2=document.querySelector("#select2");
+const outputBox=document.querySelector(".output_container h6");
+let input_box=document.querySelector("#input_box");
+let exchangeOutputBox=document.querySelector(".output");
+let pushButton=document.querySelector("#finalSubmit");
+
+pushButton.addEventListener('click',async()=>{
+    console.log("button is clicked");
+    const string1=element1.value;
+    // console.log(typeof(string1));
+    const string2=element2.value;
+    // console.log(string2);
+    let currCode = string1.toLowerCase();
+    let currCode2 = string2.toLowerCase();
+    console.log(currCode);
+    console.log(currCode2);
+
+    let url = `https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/${currCode}.json` ;
+    let response = await fetch(url);
+    let data = await response.json();
+
+    let exchangeRate=data[currCode][currCode2];
+    let multiple=input_box.value;
+    let result=exchangeRate * multiple;
+    console.log(result);
+    console.log(exchangeRate);
+
+    outputBox.innerText=result;
+    exchangeOutputBox.innerText=`1 ${string1} : ${exchangeRate} ${string2}`;
+})

@@ -151,6 +151,20 @@ form{
     color: #071965;
 }
 
+.output{
+    position: absolute;
+    width: 22%;
+    height: 2vh;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    top: 44.5vh;
+    left: 50vw;
+    background-color: rgb(239, 234, 234);
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
 form button{
     position: absolute;
     left: 30vw;

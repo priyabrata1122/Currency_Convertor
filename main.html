@@ -24,7 +24,7 @@
         <div class="input_container">
             <div class="amount">
                 <p>Amount</p>
-                <input type="text" value="1" title="amount"> 
+                <input type="text" value="1" title="amount" id="input_box"> 
             </div>
             <div class="from">
                 <p>From</p>
@@ -52,17 +52,21 @@
             </div>
         </div>
 
-        <!-- <div class="flag_container">
-            <div class="from_flag"><img src="" title="flag1" id="flag1"></div>
-            <div class="to_flag"><img src="" title="flag2" id="flag2"></div>
-        </div> -->
+        <div class="flag_container">
+            <div class="from_flag"><img src="https://flagsapi.com/US/flat/64.png" title="flag1" id="flag1"></div>
+            <div class="to_flag"><img src="https://flagsapi.com/IN/flat/64.png" title="flag2" id="flag2"></div>
+        </div>
 
         <div class="output_container">
             <p>Converted Amount : </p>
             <h6></h6>
         </div>
 
-        <button type="submit">Get Rate</button>
+        <div class="output">
+            
+        </div>
+
+        <button id="finalSubmit" type="button">Get Rate</button>
     </form>
 
     <script src="script_UI.js"></script>
